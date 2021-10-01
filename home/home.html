@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./home/home.css">
+    <link rel="stylesheet" href="./home/main.css">
+    <script src="./home/home.js"></script>
+    <script src="./home/about.js"></script>
+
+  </head>
+
+  <body>
+    <a href="#about" id="home">
+      <h2>Hello!  I'm <span>Will Short</span>.  I'm a Fullstack Web Developer</h2>
+      <p id="type-text"></p>
+      <div id="down-arrow"></div>
+    </a>
+    <main id="about">
+      <a href="#home" id="back"><div id="up-arrow"></div></a>
+        <section id="about-me">
+          <div id="top">
+            <div id="headers">
+              <h3>About Me</h3>
+              <h3 id="Resume"><a href="https://cdn0.careeraddict.com/uploads/article/53132/12._20Job_20for_20summer.jpg" target="_blank">Resume</a></h3>
+            </div>
+            <p>I have been coding for over 10 years on competitive robotics teams from grade school through high school. Since then I've been honing my skills as a Fullstack Web Developer.</p>
+            <div id="media">
+              <a href="https://www.linkedin.com/in/will-s-231740126/" target="_blank"><img src="../pics/linkedin-3-256.ico"></a>
+              <a href="https://github.com/will-short" target="_blank"><img src="../pics/github-9-48.ico"></a>
+            </div>
+          </div>
+          <div id="bottom">
+            <div id="buttons">
+              <h4 class="clicked">Portfolio</h4>
+              <h4>Contact</h4>
+            </div>
+            <div id="portfolio">
+              <div>project 1</div>
+              <div>project 2</div>
+              <div>project 3</div>
+            </div>
+            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            <div id="contact">
+              <form id="contact-form" action="https://getform.io/f/772d2ec6-a364-4b63-8b46-c333ed0cf1f4" method="POST" target="dummyframe">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email">
+                <label for="message">Subject</label>
+                <textarea id="message" name="message" placeholder="Write something" style="height:100px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+
+            </div>
+          </div>
+
+          </div>
+        </section>
+        <footer>
+          <div><img src="../pics/css.png">CSS</div>
+          <div><img src="../pics/html-5.png">HTML</div>
+          <div><img src="../pics/sequelize-logo.png">sequelize</div>
+          <div><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"></div>
+          <div><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg">Postgresql</div>
+          <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg">React</div>
+          <div><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg"></div>
+          <div><img src="https://camo.githubusercontent.com/58045a79a69afea4cab1cea6def6d911fba3956cf5fd683addf41c032aa64088/68747470733a2f2f636c6475702e636f6d2f78465646784f696f41552e737667"></div>
+        </footer>
+    </main>
+
+  </body>
+</html>
