@@ -204,6 +204,26 @@ input[type=submit] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #007bee;
+}
+#submit{
+  opacity: 0;
+  color: #007bee;
+  font-weight: bold;
+}
+.fade{
+  animation: fadeIn 2.5s;
 
+}
+.fadeOut{
+  opacity: 0;
+  animation: fadeOut 3s;
+}
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

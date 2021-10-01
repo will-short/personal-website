@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", (e) => {
   let buttons = document.querySelectorAll("#bottom > #buttons > h4");
-  let bottom = document.getElementById("bottom");
   let port = document.getElementById("portfolio");
   let contact = document.getElementById("contact");
   buttons[0].addEventListener("click", () => {
@@ -23,6 +22,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
   document.querySelector("#contact-form").onsubmit = (e) => {
     e.target.submit();
     e.target.reset();
+    let alert = document.getElementById("submit");
+    alert.className = "fade";
+    setTimeout(() => (alert.className = "fadeOut"), 2500);
     return false;
   };
 });
