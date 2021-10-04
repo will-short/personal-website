@@ -43,6 +43,7 @@ a{
       transform: translateY(30px);
       opacity: 0;
     }
+
     100% {
       transform: translateY(0);
       opacity: 1;
@@ -53,7 +54,7 @@ a{
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #A8A8A8;
+  background-color: #0a192f;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -63,7 +64,7 @@ h2{
   color: whitesmoke;
   font-size: 50px;
   margin: 0px;
-  animation: fadeIn 1.5s;
+  animation: fadeIn 2.5s;
 }
 
 #home > * {
