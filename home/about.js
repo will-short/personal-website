@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", (e) => {
   let buttons = document.querySelectorAll("#bottom > #buttons > h4");
-  let portButtons = document.querySelectorAll("#pbuttons > button");
+  let portButtons = document.querySelectorAll("#pbuttons > li > button");
   let port = document.getElementById("portfolio");
   let contact = document.getElementById("contact");
   let alert = document.getElementById("submit");
@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     portButtons[0].className = "highlight";
     portButtons[1].className = "";
     portButtons[2].className = "";
+    portButtons[3].className = "";
   });
 
   portButtons[1].addEventListener("click", (e) => {
@@ -40,6 +41,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     portButtons[0].className = "";
     portButtons[1].className = "highlight";
     portButtons[2].className = "";
+    portButtons[3].className = "";
   });
   portButtons[2].addEventListener("click", (e) => {
     let img = document.querySelector("#pcontent > img");
@@ -47,6 +49,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
     portButtons[0].className = "";
     portButtons[1].className = "";
     portButtons[2].className = "highlight";
+    portButtons[3].className = "";
+  });
+  portButtons[3].addEventListener("click", (e) => {
+    let img = document.querySelector("#pcontent > img");
+    img.src = "../pics/red_square.png";
+    portButtons[0].className = "";
+    portButtons[1].className = "";
+    portButtons[2].className = "";
+    portButtons[3].className = "highlight";
   });
 
   document.querySelector("#contact-form").onsubmit = (e) => {
