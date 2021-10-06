@@ -266,20 +266,20 @@ input[type="submit"]:hover {
 }
 #submit {
   opacity: 0;
-  color: #007bee;
+  color: aqua;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 .fade {
   opacity: 0;
-  animation: fadeInOut 3s;
+  animation: fadeInOut 5s;
 }
 
 @keyframes fadeInOut {
   0% {
     opacity: 0;
   }
-  50% {
+  40% {
     opacity: 1;
   }
   100% {
@@ -305,6 +305,6 @@ input[type="submit"]:hover {
   margin-top: 10px;
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
