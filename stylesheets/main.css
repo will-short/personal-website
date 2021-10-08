@@ -196,11 +196,10 @@ footer {
   color: whitesmoke;
   margin-bottom: 50px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 footer > div {
   height: 80%;
-  margin: 0px 50px;
   display: flex;
   flex-direction: column;
   text-align: center;
