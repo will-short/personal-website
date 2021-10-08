@@ -1,0 +1,92 @@
+html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Home Page
+  link(rel='stylesheet' href='../stylesheets/home.css')
+  link(rel='stylesheet' href='../stylesheets/main.css' type='text/css')
+  script(src='../scripts/home.js')
+  script(type='module' src='../scripts/about.js')
+body
+    a#home(href='#about')
+      h2
+        | Hello!  I'm
+        span  Will Short
+        | .  I'm a Fullstack Developer
+      p#type-text
+      div#down-arrow
+    main#about
+      a#back(href='#home')
+        div#up-arrow
+      section#about-me
+        div#top
+          div#headers
+            h3 About Me
+            h3#Resume
+              a(href='https://cdn0.careeraddict.com/uploads/article/53132/12._20Job_20for_20summer.jpg' target='_blank') Resume
+          p
+            | I&nbsp;have&nbsp;over 10 years of experience coding within and leading teams through competitive robotics using industry standards such as Git and Java as well as getting experience with Agile and Scrum project management frameworks. Since&nbsp;then&nbsp;I&apos;ve&nbsp;been&nbsp;honing&nbsp;my&nbsp;skills&nbsp;as&nbsp;a Fullstack Developer.
+          #media
+            a(href='https://www.linkedin.com/in/will-s-231740126/' target='_blank')
+              img(src='../pics/linkedin-3-256.ico')
+            a(href='https://github.com/will-short' target='_blank')
+              img(src='../pics/github-9-48.ico')
+        div#bottom
+          div#buttons
+            h4.clicked Portfolio
+            h4 Contact Me
+          div#wrapper
+            #portfolio
+              ul#pbuttons
+                li
+                  button.highlight project 1
+                li
+                  button project 2
+                li
+                  button project 3
+                li
+                  button project 4
+              div#pcontent
+                img(src='../pics/placeholder.png')
+                div#pabout
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  ul
+                    li
+                      a(href='') Live app
+                    li
+                      a(href='') Code
+            iframe#dummyframe(name='dummyframe' style='display: none;')
+            div#contact
+              form#contact-form(action='https://getform.io/f/772d2ec6-a364-4b63-8b46-c333ed0cf1f4' method='POST' target='dummyframe')
+                label(for='name') Name
+                input#name(type='text' name='name' placeholder='name')
+                label(for='email') Email
+                input#email(type='email' name='email' placeholder='email')
+                label(for='message') Subject
+                textarea#message(name='message' placeholder='Write something' style='height:100px')
+                div#submitdiv
+                  input(type='submit' value='Submit')
+                  label#submit(for='message') Message Sent!
+      footer
+        div
+          img(src='../pics/css.png')
+          | CSS
+        div
+          img(src='../pics/html-5.png')
+          | HTML
+        div
+          img(src='../pics/sequelize-logo.png')
+          | sequelize
+        div
+          img(src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg')
+        div
+          img(src='https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg')
+          | Postgresql
+        div
+          img(src='https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg')
+          | React
+        div
+          img(src='https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg')
+        div
+          img(src='https://camo.githubusercontent.com/58045a79a69afea4cab1cea6def6d911fba3956cf5fd683addf41c032aa64088/68747470733a2f2f636c6475702e636f6d2f78465646784f696f41552e737667')
